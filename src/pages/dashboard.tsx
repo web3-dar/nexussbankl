@@ -8,8 +8,8 @@ const Dashboard = () => {
   const navigate = useNavigate();
 
   const allTransactions = [
-    { type: "Credit", amount: 150000.0, date: "2025-01-03 09:00:00" },
-    { type: "Debit", amount: -2500.0, date: "2025-01-03 14:30:00" },
+    { type: "Debit", amount: -150.0, date: "2025-02-07 09:00:00" },
+    { type: "Debit", amount: -1200.0, date: "2025-02-07 14:30:00" },
     { type: "Credit", amount: 75000.0, date: "2025-01-02 16:00:00" },
     { type: "Debit", amount: -1500.0, date: "2025-01-02 10:20:00" },
     { type: "Credit", amount: 200000.0, date: "2025-01-01 10:00:00" },
@@ -84,14 +84,14 @@ const Dashboard = () => {
                   <span className="material-icons">content_copy</span>
                 </button>
               </div>
-              <h1 className="text-3xl font-bold mt-2">$673,000</h1>
+              <h1 className="text-3xl font-bold mt-2">$197,000</h1>
             </div>
 
             {/* Actions Section */}
             <div className="grid grid-cols-2 lg:grid-cols-1 gap-4">
               <button
                 className="flex items-center text-purple-600 p-4 bg-purple-50 rounded-lg"
-                onClick={() => navigate("/overview")}
+                onClick={() => navigate("/send")}
               >
                 <div className="bg-purple-100 p-4 rounded-lg">
                   <span className="material-icons">send</span>

@@ -11,6 +11,7 @@ import LoanPage from './components/loan';
 import TransactionHistory from './pages/history';
 import MyCards from './pages/myCards';
 import SettingsPage from './pages/settings';
+import SendMoney from './pages/sendmoney';
 
 
 const App: React.FC = () => {
@@ -28,6 +29,7 @@ const App: React.FC = () => {
           <Route path="/history" element={<TransactionHistory />} />
           <Route path="/cards" element={<MyCards />} />
           <Route path="/settings" element={<SettingsPage />} />
+          <Route path="/send" element={<SendMoney />} />
           
           
           <Route path="/dashboard" element={<Dashboard />} />
