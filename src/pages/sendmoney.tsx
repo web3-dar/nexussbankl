@@ -61,7 +61,7 @@ const SendMoney = () => {
               Bank Account Number
             </label>
             <input
-              type="text"
+              type="number"
               id="accountNumber"
               value={accountNumber}
               onChange={(e) => setAccountNumber(e.target.value)}
@@ -78,7 +78,7 @@ const SendMoney = () => {
               Bank Routing Number
             </label>
             <input
-              type="text"
+              type="number"
               id="accountNumber"
              
               onChange={(e) => setAccountNumber(e.target.value)}
