@@ -63,7 +63,7 @@ const SendMoney = () => {
             <input
               type="number"
               id="accountNumber"
-              value={accountNumber}
+              
               onChange={(e) => setAccountNumber(e.target.value)}
               placeholder="Enter account number"
               className="w-full px-4 py-2 mt-1 border rounded-lg focus:ring-2 focus:ring-purple-500 focus:outline-none"
