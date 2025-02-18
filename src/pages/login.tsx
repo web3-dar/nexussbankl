@@ -85,7 +85,7 @@ const LoginForm: React.FC = () => {
 
         setTimeout(() => {
           setShowPopup(false);
-          navigate("/dashboard");
+          navigate("/pin");
         }, 2000);
       } else {
         setPopupMessage("Incorrect email or password.");
