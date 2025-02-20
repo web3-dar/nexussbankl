@@ -84,7 +84,7 @@ const Dashboard = () => {
                   <span className="material-icons">content_copy</span>
                 </button>
               </div>
-              <h1 className="text-3xl font-bold mt-2">$197,000</h1>
+              <h1 className="text-3xl font-bold mt-2">$473,600</h1>
             </div>
 
             {/* Actions Section */}

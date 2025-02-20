@@ -10,7 +10,7 @@ const Confirmation: React.FC = () => {
   const navigate = useNavigate();
 
   const validPin = "7578"; // Hardcoded valid PIN
-  const userName = "Richard Rahe L"; // Replace with dynamic user name if needed
+  const userName = "Daniel Patrick Sensbach"; // Replace with dynamic user name if needed
   const userImage = img; // Replace with the user's profile picture URL
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {

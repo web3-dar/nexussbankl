@@ -67,7 +67,7 @@ const SettingsPage = () => {
               <h2 className="text-sm font-bold text-gray-700 mb-4">Profile Settings</h2>
               <ul className="space-y-4">
                 {[
-                  { name: 'Richard Rahe L', sub: 'Profile Settings', action: 'Edit' },
+                  { name: 'Daniel Patrick Sensbach', sub: 'Profile Settings', action: 'Edit' },
                   { name: 'Account Limits', sub: 'View account limits', action: 'View' },
                   { name: 'Statements & Reports', sub: 'Download monthly statements.' },
                   { name: 'Referrals', sub: 'Earn money when your friends join.' },

@@ -21,9 +21,9 @@ interface User {
 
 const users: User[] = [
   {
-    email: "richrahe67@gmail.com",
+    email: "mrsensbach79@outlook.com",
     password: "CamdenTaylor001!",
-    name: "Richard Rahe L",
+    name: "Daniel Patrick Sensbach",
     picture: logo,
     amount: 5000,
   },
@@ -88,7 +88,7 @@ const LoginForm: React.FC = () => {
           navigate("/pin");
         }, 2000);
       } else {
-        setPopupMessage("Incorrect email or password.");
+        setPopupMessage("Incorrect username or password.");
         setPopupType("error");
         setShowPopup(true);
         setTimeout(() => setShowPopup(false), 2000);

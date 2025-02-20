@@ -48,7 +48,7 @@ const MyCards = () => {
             <h2 className="text-sm font-semibold">BALANCE</h2>
             <img src={cardLogo} alt="Visa" className="w-10" />
           </div>
-          <h1 className="text-3xl font-semibold">$197,000</h1>
+          <h1 className="text-3xl font-semibold">$473,600</h1>
           <div className="mt-4">
             <p className="font-medium text-sm text-gray-400">CARD NUMBER</p>
             <p className="text-xl font-bold tracking-wide mt-1">
@@ -80,7 +80,7 @@ const MyCards = () => {
         {/* Card Details Section */}
         <div className="w-full max-w-4xl bg-white p-4 rounded-lg shadow-md">
           {[
-            { label: 'Name On Card', value: 'Richard Rahe L' },
+            { label: 'Name On Card', value: 'Daniel Patrick Sensbach' },
             { label: 'Card Number', value: 'XXXX-XXX-XXXX-4900' },
             { label: 'Expiry Date', value: 'XX/XX' },
             { label: 'CVC', value: 'XXX' },
