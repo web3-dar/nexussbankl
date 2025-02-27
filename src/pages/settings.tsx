@@ -10,6 +10,7 @@ const SettingsPage = () => {
   const handleLogout = () => {
     setIsLoading(true);
     setTimeout(() => {
+      sessionStorage.clear(); // Clear session storage
       setIsLoading(false);
       navigate('/');
     }, 2000);
