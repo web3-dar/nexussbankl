@@ -6,9 +6,14 @@ import BottomNav from './stickyNav';
 
 const MyCards = () => {
   const [selectedDetail, setSelectedDetail] = useState<string | null>(null);
+  const [showCardDetails, setShowCardDetails] = useState<boolean>(false);
 
   const handleDetailClick = (detail: string) => {
     setSelectedDetail(detail === selectedDetail ? null : detail);
+  };
+
+  const toggleCardDetails = () => {
+    setShowCardDetails((prev) => !prev);
   };
 
   return (
@@ -24,9 +29,7 @@ const MyCards = () => {
             />
             <FaCreditCard size={24} className="text-purple-600" />
           </div>
-          <button className="text-purple-600 text-2xl">
-            <i className="fas fa-sync-alt"></i>
-          </button>
+         
         </div>
 
         {/* Toggle Tabs */}
@@ -52,21 +55,24 @@ const MyCards = () => {
           <div className="mt-4">
             <p className="font-medium text-sm text-gray-400">CARD NUMBER</p>
             <p className="text-xl font-bold tracking-wide mt-1">
-              XXXX-XXXX-XXXX-4900
+              {showCardDetails ? '4321-5678-9876-4900' : 'XXXX-XXXX-XXXX-4900'}
             </p>
           </div>
           <div className="flex justify-between mt-2">
             <div>
               <p className="font-medium text-sm text-gray-400">EXPIRY</p>
-              <p className="text-sm font-bold">XX / XX</p>
+              <p className="text-sm font-bold">{showCardDetails ? '12/26' : 'XX / XX'}</p>
             </div>
             <div>
               <p className="font-medium text-sm text-gray-400">CCV</p>
-              <p className="text-sm font-bold">XXX</p>
+              <p className="text-sm font-bold">{showCardDetails ? '123' : 'XXX'}</p>
             </div>
           </div>
+          
         </div>
-
+<button className="text-purple-600 text-sm border border-black text-[#fff] bg-black hover:bg-white hover:text-black rounded px-3 py-1 mb-2" onClick={toggleCardDetails}>
+            {showCardDetails ? 'Hide Details' : 'Show Details'}
+           </button>
         {/* Action Buttons */}
         <div className="w-full max-w-4xl flex gap-4 mb-6">
           <button className="flex-1 bg-yellow-500 text-white py-3 rounded-lg shadow-lg font-semibold hover:bg-yellow-600">
@@ -81,9 +87,9 @@ const MyCards = () => {
         <div className="w-full max-w-4xl bg-white p-4 rounded-lg shadow-md">
           {[
             { label: 'Name On Card', value: 'Daniel Patrick Sensbach' },
-            { label: 'Card Number', value: 'XXXX-XXX-XXXX-4900' },
-            { label: 'Expiry Date', value: 'XX/XX' },
-            { label: 'CVC', value: 'XXX' },
+            { label: 'Card Number', value: showCardDetails ? '4321-5678-9876-4900' : 'XXXX-XXX-XXXX-4900' },
+            { label: 'Expiry Date', value: showCardDetails ? '12/26' : 'XX/XX' },
+            { label: 'CVC', value: showCardDetails ? '123' : 'XXX' },
           ].map((detail, index) => (
             <div
               key={index}
